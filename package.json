@@ -1,0 +1,36 @@
+{
+    "name": "night_school_app_dev",
+    "version": "1.0.0",
+    "private": true,
+    "workspaces": [
+        "backend"
+    ],
+    "scripts": {
+        "start": "npm run start --workspace=backend",
+        "build": "npm run build --workspace=backend",
+        "start:dev": "npm run start:dev --workspace=backend"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/gijaeAhn/NightSchool_Management.git"
+    },
+    "bugs": {
+        "url": "https://github.com/gijaeAhn/NightSchool_Management/issues"
+    },
+    "homepage": "https://github.com/gijaeAhn/NightSchool_Management#readme",
+    "devDependencies": {
+        "@types/express": "^5.0.0",
+        "@types/node": "^22.13.13",
+        "date-fns": "^4.1.0",
+        "helmet": "^8.0.0"
+    },
+    "dependencies": {
+        "@nestjs/core": "^11.0.9",
+        "@nestjs/jwt": "^11.0.0",
+        "@nestjs/passport": "^11.0.5",
+        "@nestjs/platform-express": "^11.0.9",
+        "bcrypt": "^5.1.1",
+        "passport-jwt": "^4.0.1",
+        "pg": "^8.13.3"
+    }
+}
